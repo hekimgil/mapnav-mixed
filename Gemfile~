@@ -45,10 +45,14 @@ gem 'spring',        group: :development
 gem 'capybara'
 
 group :development do
-  gem 'rspec-rails', '>=2.0.1'
+  gem 'rspec-rails', '>=3.1.0'
 end
 
 group :test do
-  gem 'rspec', '>=2.0.1'
+  gem 'rspec', '>=3.1.0'
   gem 'webrat', '0.7.3'
 end
+
+gem 'rails_12factor', group: :production
+
+ruby '2.1.2p95'
