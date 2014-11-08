@@ -43,3 +43,12 @@ gem 'spring',        group: :development
 
 # Use capybara
 gem 'capybara'
+
+group :development do
+  gem 'rspec-rails', '>=3.1.0'
+end
+
+group :test do
+  gem 'rspec', '>=3.1.0'
+  gem 'webrat', '0.7.3'
+end
