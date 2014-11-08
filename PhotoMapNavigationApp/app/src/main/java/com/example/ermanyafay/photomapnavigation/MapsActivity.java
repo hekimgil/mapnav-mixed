@@ -223,7 +223,9 @@ public class MapsActivity extends FragmentActivity {
                 Location loc =  op.readPhotoLocation();
 
                 if(loc != null) {
-                    allPhotos.add(BitmapFactory.decodeFile(path));
+                    Bitmap bmp = BitmapFactory.decodeFile(path);
+                    bmp = op.fixRotation(bmp);
+                    allPhotos.add(bmp);
                     allLocations.add(loc);
                 }
             }
