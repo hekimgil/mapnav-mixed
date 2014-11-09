@@ -31,8 +31,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class MapsActivity extends FragmentActivity {
-
+public class MapsActivity extends FragmentActivity
+{
     private static int REQUEST_TAKE_PHOTO = 1;
 
     private static final String JPEG_FILE_PREFIX = "IMG_";
@@ -96,34 +96,34 @@ public class MapsActivity extends FragmentActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_maps);
-        setAllPhotos();
-        setUpMapIfNeeded();
+        //setAllPhotos();
+        //setUpMapIfNeeded();
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-
-        getMenuInflater().inflate(R.menu.main, menu);
-
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
+        getMenuInflater().inflate(R.menu.maps_actionbar, menu);
         super.onCreateOptionsMenu(menu);
         return true;
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        if (id == R.id.action_settings) {
-            return true;
-        } else if(id == R.id.action_take_picture) {
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
+        if(item.getItemId() == R.id.action_take_picture)
+        {
             dispatchTakePictureIntent();
             return true;
         }
-        return super.onOptionsItemSelected(item);
+        if(item.getItemId() == R.id.action_settings)
+        {
+            return true;
+        }
+        else
+        {
+            return super.onOptionsItemSelected(item);
+        }
     }
 
     private void dispatchTakePictureIntent() {
@@ -185,8 +185,7 @@ public class MapsActivity extends FragmentActivity {
         // Do a null check to confirm that we have not already instantiated the map.
         if (mMap == null) {
             // Try to obtain the map from the SupportMapFragment.
-            mMap = ((SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map))
-                    .getMap();
+            mMap = ((SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map)).getMap();
             // Check if we were successful in obtaining the map.
             if (mMap != null) {
                 setUpMap();
@@ -195,7 +194,6 @@ public class MapsActivity extends FragmentActivity {
     }
 
     private void setUpMap() {
-
         Location currentUserLocation = new GeoTagOperation().getCurrentLocation(getSystemService(Context.LOCATION_SERVICE));
         LatLng latLng = new LatLng(currentUserLocation.getLatitude(), currentUserLocation.getLongitude());
 
