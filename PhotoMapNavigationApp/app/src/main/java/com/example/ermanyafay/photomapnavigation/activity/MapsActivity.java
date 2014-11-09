@@ -1,4 +1,4 @@
-package com.example.ermanyafay.photomapnavigation;
+package com.example.ermanyafay.photomapnavigation.activity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -15,6 +15,9 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.ermanyafay.photomapnavigation.R;
+import com.example.ermanyafay.photomapnavigation.operation.GeoTagOperation;
+import com.example.ermanyafay.photomapnavigation.operation.UploadImageTask;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;

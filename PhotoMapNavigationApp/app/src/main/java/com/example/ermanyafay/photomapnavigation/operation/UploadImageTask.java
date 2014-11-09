@@ -1,7 +1,9 @@
-package com.example.ermanyafay.photomapnavigation;
+package com.example.ermanyafay.photomapnavigation.operation;
 
 import android.os.AsyncTask;
 import android.util.Log;
+
+import com.example.ermanyafay.photomapnavigation.Constants;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
