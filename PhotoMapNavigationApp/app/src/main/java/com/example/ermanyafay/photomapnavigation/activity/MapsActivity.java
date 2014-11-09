@@ -14,7 +14,6 @@ import android.util.Base64;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-
 import com.example.ermanyafay.photomapnavigation.R;
 import com.example.ermanyafay.photomapnavigation.operation.GeoTagOperation;
 import com.example.ermanyafay.photomapnavigation.operation.UploadImageTask;
@@ -24,7 +23,6 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
-
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;

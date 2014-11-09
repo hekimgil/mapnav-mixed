@@ -8,6 +8,7 @@ import java.util.Date;
 /**
  * Created by Erman Yafay on 09.11.2014.
  */
+
 public class Photo {
 
     private String url, title, description;
