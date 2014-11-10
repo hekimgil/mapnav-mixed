@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :albums
+
   get 'users/new'
 
   root 'pages#home'
