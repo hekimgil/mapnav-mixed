@@ -46,6 +46,7 @@ gem 'capybara'
 
 group :development do
   gem 'rspec-rails', '>=3.1.0'
+  gem 'annotate-models', '>=1.0.4'
 end
 
 group :test do
@@ -55,4 +56,4 @@ end
 
 gem 'rails_12factor', group: :production
 
-ruby '2.1.2p95'
+ruby '2.1.2'
