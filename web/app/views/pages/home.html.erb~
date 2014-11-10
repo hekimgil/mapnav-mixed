@@ -1,2 +1,6 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<h1>MapNav Home</h1>
+<p>Welcome to Map Based Photo Album! </p>
+<p>Take your album with you wherever you go in the world.</p>
+<p>Map Based Photo Album lets you to create photo collections that you can hold them together on the world map with their locations in which they were taken.</p>
+
+
