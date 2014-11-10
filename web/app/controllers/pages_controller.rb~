@@ -7,10 +7,6 @@ class PagesController < ApplicationController
     @title = "Register"
   end
 
-  def download
-    @title = "Download App"
-  end
-
   def login
     @title = "Log in"
   end

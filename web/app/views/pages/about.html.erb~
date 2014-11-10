@@ -1,2 +1,10 @@
 <h1>Pages#about</h1>
-<p>Find me in app/views/pages/about.html.erb</p>
+<p>What is Map Based Photo Album</p>
+<p>Map Based Photo Album lets you to to easily organise your photos according to their locations in which they were taken on a world map. </p>
+<p>Take Map Based Photo Album with you</p>
+<p>Go to Download Android App to get Map Based Photo Album on your mobile device.</p>
+<p>TeamYeah</p>
+<p>TeamYeah is founded by Hakan Hekimgil, Yeter Catikkas and Reyhan Ozdogan in 2014-2015 fall semester in Izmir Institute of Technology for CENG316-Software Engineering course. This is our software project for the course.  
+We are working with Erman Yafay and Unver Can Unlu for the Android application part of it. 
+Hope you like it!</p>
+<img width="80%" height="80%" src="https://d30su0b7sry5gh.cloudfront.net/repo/scHsa1As/images/hjdsUezP.jpg" alt="About Us"></image>
